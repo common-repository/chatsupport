@@ -1,0 +1,402 @@
+@charset "utf-8";
+/*Lato font added code here -----------------------------------------------------------------*/
+@font-face {
+	font-family: 'Lato';
+	src: url('https://storage.googleapis.com/front-office/global-styles/fonts/Lato-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('https://storage.googleapis.com/front-office/global-styles/fonts/Lato-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('https://storage.googleapis.com/front-office/global-styles/fonts/Lato-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('https://storage.googleapis.com/front-office/global-styles/fonts/Lato-Semibold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('https://storage.googleapis.com/front-office/global-styles/fonts/Lato-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('https://storage.googleapis.com/front-office/global-styles/fonts/Lato-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+
+
+
+/* common code start here ****************/
+*{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+	font-display: swap;
+	scrollbar-width: none;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.display-none{
+  display: none;
+}
+
+.display-block{
+  display: block;
+}
+
+
+
+.wordpress-plugin-setup{
+  text-align: center;
+  margin:0px 0px 0px -20px;
+}
+
+.wordpress-plugin-setup > div{
+  text-align: center;
+  padding: 60px 0px 20px;
+}
+
+.wordpress-plugin-setup > div img:nth-child(2){
+  margin: 0px 30px 8px;
+}
+
+.wordpress-plugin-setup > div img:nth-child(1),
+.wordpress-plugin-setup > div img:nth-child(3){
+  width: 40px;
+  height: 40px;
+}
+.wordpress-plugin-setup > div img:nth-child(3){
+  width: 50px;
+  height: 50px;
+  margin: 0px 0px -6px;
+}
+.wordpress-plugin-setup > img{
+  width: 730px;
+  margin: 0px auto;
+  display: block;
+}
+.widget-install > img{
+	width:65px;
+}
+.wordpress-plugin-setup > button,
+.widget-install > button,
+.wordpress-plugin-setup > input[type="button"],
+.widget-install > input[type="button"]
+{
+  background-color: #4684ff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  border:0;
+  padding: 10px 23px;
+  cursor: pointer;
+  outline: none;
+  margin: 50px 0px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  height: 38px;
+}
+
+.widget-install > button,
+.widget-install > input[type="button"]{
+  margin: 0px 0px 50px;
+}
+
+.wordpress-plugin-setup > input[type="button"]:hover,
+.widget-install > input[type="button"]:hover,
+.wordpress-plugin-setup > button:hover,
+.widget-install > button:hover{
+  background-color: rgba(70,132,255,.9);
+}
+
+.widget-install > button.btn-outline,
+.widget-install > input[type="button"].btn-outline{
+  color: #727c8f;
+  font-size: 14px;
+  line-height: 1.43;
+  font-weight: normal;
+  background-color: transparent;
+}
+
+.wordpress-plugin-setup > button.btn-progressing{
+  max-width: 128px;
+  background-color: #4684ff;
+  position: relative;
+}
+
+
+@-webkit-keyframes btn-spinner {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.wordpress-plugin-setup > button.btn-progressing:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 21px;
+  height: 21px;
+  border: 2px solid #fff;
+  border-left-color: rgba(255,255,255,.5);
+  border-radius: 50%;
+  -webkit-animation: btn-spinner .75s infinite linear;
+  animation: btn-spinner .75s infinite linear;
+}
+
+.wordpress-plugin-setup > button.btn-progressing span{
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+.widget-install{
+  text-align: center;
+  margin: 60px 0px 0px;
+}
+
+.widget-install h3{
+  font-family: 'Lato', sans-serif;
+  color: #181818;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 0px 8px;
+  margin: 0px;
+  display: block;
+}
+
+.widget-install h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #727c8f;
+  line-height: 1.25;
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+
+/**/
+.wordpress-project-clips{
+  margin: 40px 0px 20px -20px;
+}
+
+.wordpress-project-clips > aside{
+  width: 260px;
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(10, 31, 68, 0.1);
+  border: solid 1px #f0f2f5;
+  background-color: #ffffff;
+  text-align: left;
+  margin: 0px 0px 20px 20px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/*.wordpress-project-clips > aside:nth-child(1){
+  margin: 0px 0px 20px 0px;
+}*/
+
+.wordpress-project-clips > aside div{
+  padding: 28px 30px 28px 83px;
+  display: table-cell;
+  vertical-align: middle;
+  width: 260px;
+  height: 100px;
+} 
+
+.wordpress-project-clips > aside figure{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #6699ff;
+  position: absolute;
+  left: 22px;
+  top: 50%;
+  margin: -20px 0px 0px;
+  background-image: url("../images/chatsupport-white-logo-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+.wordpress-project-clips > aside figure img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+.wordpress-project-clips > aside figure cite{
+  border: 2px solid #6699ff;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 100%;
+}
+
+.wordpress-project-clips > aside label{
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #181818;
+  line-height: normal;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: auto;
+  display: block;
+  width: 137px;
+}
+
+.wordpress-project-clips > aside span{
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #727c8f;
+  margin: 5px 0px 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: auto;
+  display: block;
+  width: 137px;
+}
+
+/*media css code start here ************************/
+@media screen and (min-width: 1300px) {
+    .wordpress-plugin-setup > img{
+        width: 1000px;
+    }
+}
+
+
+@keyframes rotate360 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wordpress-loader svg{
+  margin: 12px auto;
+  width: 40px;
+  height: 40px;
+  display: block;
+  animation: rotate360 1.5s cubic-bezier(1, 0.5, 0.5, 1)infinite;
+  fill: transparent;
+  stroke: #acb7cc;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0px 0px 60px;
+  z-index: 2;
+}
+
+.wordpress-loader:before{
+  content: "Finding your widget(s)";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 50px 0px 0px 5px;
+  z-index: 2;
+}
+
+.wordpress-bg{
+  content: "";
+  background-color: #ffffff;
+  position: fixed;
+  left: 160px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+
+
+.wordpress-error{
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -100px 0px 0px -25px;
+  z-index: 2;
+}
+
+.wordpress-error > h2{
+  font-size: 20px;
+  font-weight: 600;
+  color: #181818;
+  margin: 40px 0px 30px;
+  line-height: normal;
+}
+
+.wordpress-error > input[type="button"]{
+  background-color: #4684ff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  border:0;
+  padding: 10px 23px;
+  cursor: pointer;
+  outline: none;
+  margin:0px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.wordpress-error > input:hover{
+  background-color: rgba(70,132,255,.9);
+}
+
+.bg{
+  background-color: #000000;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  opacity: 0.5;
+  display: none;
+  z-index: 99999;
+}
